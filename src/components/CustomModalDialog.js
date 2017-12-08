@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 
 // not working
-class CustomModalDialog2 extends Component {
+class CustomModalDialog extends Component {
   constructor(props) {
     super(props);
     this.state = { showModal: false };
@@ -42,4 +42,4 @@ class CustomModalDialog2 extends Component {
   }
 }
 
-export default CustomModalDialog2;
+export default CustomModalDialog;
