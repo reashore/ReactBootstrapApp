@@ -40,11 +40,11 @@ class App extends Component {
           <CustomButtonBar />
         </div>
 
-        <Panel header="Button Sizing Demo">
+        <Panel header="Button Sizing Demo" bsStyle="primary">
           <CustomSizedButtons />
         </Panel>
 
-        <Panel header="Grid Layout Demo">
+        <Panel header="Grid Layout Demo" bsStyle="primary">
           <CustomGrid />
         </Panel>
 
