@@ -7,6 +7,10 @@ import CustomButtonBar from './CustomButtonBar';
 import CustomGrid from './CustomGrid';
 import CustomSizedButtons from './CustomSizedButtons';
 
+// Does not yet work with Bootstrap 4.0.0-beta.2
+// npm install bootstrap@4.0.0-beta.2
+//import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -25,20 +29,15 @@ class App extends Component {
   }
 
   render() {
-    const marginStyle = {
-      marginTop: 20,
-      marginBottom: 20
-    };
-
     return (
       <div className="container">
         <CustomTopMenu />
 
         <CustomJumbotron />
 
-        <div style={marginStyle}>
+        <Panel header="Button Type Demo" bsStyle="primary">
           <CustomButtonBar />
-        </div>
+        </Panel>
 
         <Panel header="Button Sizing Demo" bsStyle="primary">
           <CustomSizedButtons />
