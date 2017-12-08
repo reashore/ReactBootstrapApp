@@ -2,15 +2,27 @@
 import React, { Component } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 
-class CustomModalDialog extends Component {
-  // constructor(props) {
-  //   super(props);
+// not working
+class CustomModalDialog2 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { showModal: false };
 
-  // }
+    this.open = this.open.bind(this);
+    this.close = this.close.bind(this);
+  }
+
+  close() {
+    this.setState({ showModal: false });
+  }
+
+  open() {
+    this.setState({ showModal: true });
+  }
 
   render() {
     return (
-      <Modal show={this.props.showModal} onHide={this.props.close}>
+      <Modal show={this.showModal} onHide={this.close}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
@@ -23,11 +35,11 @@ class CustomModalDialog extends Component {
           <p>Aenean lacinia bibendum nulla sed consectetur. </p>
         </Modal.Body>
         <Modal.Footer>
-          <Button onClick={this.props.close}>Close</Button>
+          <Button onClick={this.close}>Close</Button>
         </Modal.Footer>
       </Modal>
     );
   }
 }
 
-export default CustomModalDialog;
+export default CustomModalDialog2;

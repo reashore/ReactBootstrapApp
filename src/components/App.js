@@ -50,25 +50,20 @@ class App extends Component {
 
         <Button bsStyle="primary" bsSize="large" onClick={this.open}>Launch Modal Dialog</Button>
 
-        {/* <CustomModalDialog close={this.close} show={this.state.showModal}  */}
-
         <Modal show={this.state.showModal} onHide={this.close}>
           <Modal.Header closeButton>
             <Modal.Title>Modal heading</Modal.Title>
           </Modal.Header>
 
           <Modal.Body>
-            <h4>Text in a modal</h4>
+            <h4>Text in a modal dialog</h4>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-            <p>Cras mattis consectetur purus sit amet fermentum. </p>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. </p>
             <p>Aenean lacinia bibendum nulla sed consectetur. </p>
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={this.close}>Close</Button>
           </Modal.Footer>
         </Modal>
-
       </div>
     );
   }
