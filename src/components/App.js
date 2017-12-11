@@ -6,6 +6,7 @@ import CustomJumbotron from './CustomJumbotron';
 import CustomButtonBar from './CustomButtonBar';
 import CustomGrid from './CustomGrid';
 import CustomSizedButtons from './CustomSizedButtons';
+import CustomForm1 from './CustomForm1';
 
 // Does not yet work with Bootstrap 4.0.0-beta.2
 // npm install bootstrap@4.0.0-beta.2
@@ -47,7 +48,9 @@ class App extends Component {
           <CustomGrid />
         </Panel>
 
-        <Button bsStyle="primary" bsSize="large" onClick={this.open}>Launch Modal Dialog</Button>
+        <Panel header="Modal Dialog Demo" bsStyle="primary">
+          <Button bsStyle="primary" bsSize="large" onClick={this.open}>Launch Modal Dialog</Button>
+        </Panel>
 
         <Modal show={this.state.showModal} onHide={this.close}>
           <Modal.Header closeButton>
@@ -63,6 +66,11 @@ class App extends Component {
             <Button onClick={this.close}>Close</Button>
           </Modal.Footer>
         </Modal>
+
+        <Panel header="CustomForm Demo" bsStyle="primary">
+          <CustomForm1 />
+        </Panel>
+
       </div>
     );
   }
