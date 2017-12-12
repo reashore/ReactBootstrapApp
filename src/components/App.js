@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import { Panel, Modal, Button } from 'react-bootstrap';
-import CustomTopMenu from './CustomTopMenu';
+import CustomNavbar from './CustomNavbar';
 import CustomJumbotron from './CustomJumbotron';
 import CustomButtonBar from './CustomButtonBar';
 import CustomGrid from './CustomGrid';
@@ -33,7 +33,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <CustomTopMenu />
+        <CustomNavbar />
 
         <CustomJumbotron />
 
@@ -50,7 +50,7 @@ class App extends Component {
         </Panel>
 
         <Panel header="Modal Dialog Demo" bsStyle="primary">
-          <Button bsStyle="primary" bsSize="large" onClick={this.open}>Launch Modal Dialog</Button>
+          <Button bsStyle="primary" onClick={this.open}>Launch Modal Dialog</Button>
         </Panel>
 
         <Modal show={this.state.showModal} onHide={this.close}>

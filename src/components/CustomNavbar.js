@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Navbar, NavItem, MenuItem, NavDropdown, Nav } from 'react-bootstrap';
 
-class CustomTopMenu extends Component {
+class CustomNavbar extends Component {
   constructor(props) {
     super(props);
 
@@ -12,7 +12,7 @@ class CustomTopMenu extends Component {
   onSelect(selectedKey) {
     alert(`selected ${selectedKey}`);
   }
-  
+
   render() {
     return (
       <Navbar>
@@ -36,4 +36,4 @@ class CustomTopMenu extends Component {
   }
 }
 
-export default CustomTopMenu;
+export default CustomNavbar;
