@@ -27,8 +27,8 @@ class CustomForm1 extends Component {
     return null;
   }
 
-  handleChange(e) {
-    this.setState({ value: e.target.value });
+  handleChange(event) {
+    this.setState({ value: event.target.value });
   }
 
   render() {

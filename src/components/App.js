@@ -7,6 +7,7 @@ import CustomButtonBar from './CustomButtonBar';
 import CustomGrid from './CustomGrid';
 import CustomSizedButtons from './CustomSizedButtons';
 import CustomForm1 from './CustomForm1';
+import CustomForm from './CustomForm';
 
 // Does not yet work with Bootstrap 4.0.0-beta.2
 // npm install bootstrap@4.0.0-beta.2
@@ -67,10 +68,11 @@ class App extends Component {
           </Modal.Footer>
         </Modal>
 
-        <Panel header="CustomForm Demo" bsStyle="primary">
+        <Panel header="CustomForm1 Demo" bsStyle="primary">
           <CustomForm1 />
         </Panel>
 
+        <CustomForm />
       </div>
     );
   }
